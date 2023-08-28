@@ -10,7 +10,7 @@ rules = core
 
 [sqlfluff:rules:capitalisation.keywords]
 # Keywords
-capitalisation_policy = upper
+; capitalisation_policy = upper
 
 
 [sqlfluff:indentation]
