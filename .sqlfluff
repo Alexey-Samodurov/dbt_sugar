@@ -1,8 +1,17 @@
 [sqlfluff]
 dialect = postgres
 templater = jinja
+project_dir = ./
 sql_file_exts = .sql,.sql.j2,.dml,.ddl
 max_line_length = 120
+processes = 0
+rules = core
+; warnings = LT01, LT04
+
+[sqlfluff:rules:capitalisation.keywords]
+# Keywords
+capitalisation_policy = upper
+
 
 [sqlfluff:indentation]
 indented_joins = false
@@ -14,3 +23,6 @@ unwrap_wrapped_queries = true
 
 [sqlfluff:templater:jinja]
 apply_dbt_builtins = true
+
+[sqlfluff:templater:jinja:context]
+target = prod
