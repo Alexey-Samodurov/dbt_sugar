@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:14
+    ports: 
+      - 5432:5432
+    environment:
+      POSTGRES_USER: dbt_sugar
+      POSTGRES_PASSWORD: dbt_sugar
+      POSTGRES_DB: dbt_sugar
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "dbt_sugar" ]
+      interval: 5s
+      retries: 5

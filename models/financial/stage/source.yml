@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: dbt_sugar
+    schema: public
+    description: "Test source for presentation"
+
+    tables:
+
+      - name: financial
+        description: "Test table with some financial data for presentation"
+        columns:
+          - name: Year
+            data_type: integer
+            description: "Year"
+
+          - name: Industry_aggregation_NZSIOC
+            data_type: text
+            description: "Industry aggregation NZSIOC"
+
+          - name: Industry_code_NZSIOC
+            data_type: text
+            description: "Industry code NZSIOC"
+          
+          - name: Industry_name_NZSIOC
+            data_type: text
+            description: "Industry name NZSIOC"
+          
+          - name: Units
+            data_type: text
+            description: "Units"
+
+          - name: Variable_code
+            data_type: text
+            description: "Variable code"
+
+          - name: Variable_name
+            data_type: text
+            description: "Variable name"
+          
+          - name: Variable_category
+            data_type: text
+            description: "Variable category"
+
+          - name: Value
+            data_type: text
+            description: "Value"
+
+          - name: Industry_code_ANZSIC06
+            data_type: text
+            description: "Industry code ANZSIC06"
