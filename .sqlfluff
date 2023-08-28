@@ -9,7 +9,6 @@ rules = core
 ; warnings = LT01, LT04
 
 [sqlfluff:rules:capitalisation.keywords]
-# Keywords
 ; capitalisation_policy = upper
 
 
