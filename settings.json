@@ -1,0 +1,31 @@
+{
+    "python.interpreter.infoVisibility": "always",
+
+    "files.associations": {
+        "*.sql": "jinja-sql",
+        "*.md": "jinja-md"
+    },
+
+    "[jinja-sql]": {
+        "editor.defaultFormatter": "innoverio.vscode-dbt-power-user"
+      },
+
+    "terminal.integrated.env.[osx|windows|linux]": { // set your os
+        "DBT_PROFILES_DIR": "."
+    },
+
+    "sqlfluff.config": "E:\\git_repo\\dbt_konnektu\\konnektu\\.sqlfluff", // set path to your .sqlfluff file
+
+    "sqlfluff.executablePath": "E:\\git_repo\\dbt_konnektu\\konnektu\\.venv\\Scripts\\sqlfluff.EXE", // set path to your sqlfluff.EXE file
+    "sqlfluff.format.arguments": ["--FIX-EVEN-UNPARSABLE"],
+    "sqlfluff.format.enabled": true,
+    "sqlfluff.experimental.format.executeInTerminal": true,
+    "sqlfluff.ignoreLocalConfig": false,
+    "sqlfluff.ignoreParsing": false,
+    "sqlfluff.suppressNotifications": false,
+    "sqlfluff.workingDirectory": "",
+    /* Linter */
+    "sqlfluff.linter.arguments": [],
+    "sqlfluff.linter.run": "formatOnType",
+    "sqlfluff.linter.diagnosticSeverity": "warning"
+}
