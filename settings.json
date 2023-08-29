@@ -17,6 +17,7 @@
     "sqlfluff.config": "E:\\git_repo\\dbt_konnektu\\konnektu\\.sqlfluff", // set path to your .sqlfluff file
 
     "sqlfluff.executablePath": "E:\\git_repo\\dbt_konnektu\\konnektu\\.venv\\Scripts\\sqlfluff.EXE", // set path to your sqlfluff.EXE file
+    
     "sqlfluff.format.arguments": ["--FIX-EVEN-UNPARSABLE"],
     "sqlfluff.format.enabled": true,
     "sqlfluff.experimental.format.executeInTerminal": true,
