@@ -1,15 +1,13 @@
-Welcome to your new dbt project!
+## How to run
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+1. Clone the repo
+2. Create a virtual environment 
+    - ```python3 -m venv .venv```
+    - ```source .venv/bin/activate```
+3. Install dependencies
+    - ```pip install -r requirements.txt```
+4. Setup the docker container with Postgres
+    - ```docker-compose up -d```
+5. Check connection to the database
+    - ```dbt debug```
+6. Run the dbt models
