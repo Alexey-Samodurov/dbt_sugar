@@ -4,5 +4,3 @@ target/
 dbt_packages/
 logs/
 .idea/
-.user.yml
-settings.json
